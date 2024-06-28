@@ -1,0 +1,146 @@
+.ancestorContainer {
+    display: flex;
+    background-color: whitesmoke;
+    padding: 8px;
+    border-radius: 8px;
+    height: 80vh;
+    margin: 6px;
+    flex-direction: column;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    padding: 4px;
+}
+
+.addButton {
+    height: fit-content;
+    width: fit-content;
+    padding: 12px 8px;
+    background-color: floralwhite;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: large;
+    font-weight: 700;
+    transition: all 0.3s linear;
+    box-shadow: 1px 1px 4px 2px rgb(0, 0, 0, 0.1);
+}
+
+.addButton:hover {
+    box-shadow: 1px 1px 4px 2px rgb(0, 0, 0, 0.4);
+}
+
+.todoContainer {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    background-color: rgb(0, 0, 0);
+    margin: 4px;
+    border-radius: 8px;
+    padding: 8px;
+    gap: 12px;
+    border-radius: 8px;
+    overflow-y: auto;
+}
+
+.todo {
+    background-color: white;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 4px 2px rgb(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.todo.done .todoTitle, .todo.done .todoDescription {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.todoContentContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.todoEditContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.todo input[type='text'], .todo textarea {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.todoCheckbox {
+    margin-right: 12px;
+    width: 24px; /* Medium size */
+    height: 24px; /* Medium size */
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    font-size: x-large;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.todoTitle {
+    color: black;
+}
+
+.todoDescription {
+    color: blue;
+}
+
+.todoInput {
+    width: 500px;
+    margin-right: 8px;
+    height: 45px;
+    font-size: large;
+}
+
+.noTodoMessage {
+    color: white;
+    align-self: center;
+    justify-self: center;
+    font-size: large;
+}
+
+.actionButtons {
+    display: flex;
+    gap: 8px;
+}
+
+.actionButtons button {
+    background-color: lightgray;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.actionButtons button:hover {
+    background-color: gray;
+    color: white;
+}
+
+.todoEditContainer input[type='text'] {
+    background-color: #dafada; /* Light gray background color for title */
+    border: 1px solid #cccccc; /* Lighter border for title */
+}
+
+.todoEditContainer textarea {
+    background-color: #f0f8ff; /* Light blue background color for description */
+    border: 1px solid #cccccc; /* Lighter border for description */
+}
